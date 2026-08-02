@@ -1,0 +1,10 @@
+{
+  "workDuration": 30,
+  "shortBreakDuration": 15,
+  "longBreakDuration": 20,
+  "sessionsBeforeLongBreak": 4,
+  "autoStartBreaks": false,
+  "autoStartWork": false,
+  "compactMode": false,
+  "playSound": true
+}
