@@ -1,3 +1,0 @@
-abbr "java21"="/usr/lib/jvm/java-21-openjdk/bin/java"
-abbr "pd"="paru -Rns"
-abbr "pi"="paru -S"
