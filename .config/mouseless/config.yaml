@@ -44,18 +44,19 @@ layers:
 - name: initial
   bindings:
     # when tab is held and another key pressed, activate mouse layer
-    tab: tap-hold-next tab ; toggle-layer mouse ; 500
+    # tab: tap-hold-next tab ; toggle-layer mouse ; 500
     # when a is held for 300ms, activate mouse layer
-    a: tap-hold a ; toggle-layer mouse ; 300
+    # a: tap-hold a ; toggle-layer mouse ; 300
     # right alt key toggles arrows layer
-    rightalt: toggle-layer arrows
+    # rightalt: toggle-layer arrows
     # switch escape with capslock (Bro, wtf??? why???)
     # esc: capslock
     # capslock: esc
     # key combos are activated when both keys are pressed simultaneously
-    f+d: layer mouse
+    # f+d: layer mouse
+    leftbrace+rightbrace: layer mouse
     # map ctrl+h/j/k/l to arrow keys
-    leftctrl: mod-layer leftctrl vim-arrows
+    # leftctrl: mod-layer leftctrl vim-arrows
 # a layer for mouse movement
 - name: mouse
   # when true, keys that are not mapped keep their original meaning
