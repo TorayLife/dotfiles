@@ -202,7 +202,7 @@ now(function()
   -- Arduino
   add({ 'https://github.com/yuukiflow/Arduino-Nvim'})
   require('Arduino-Nvim').setup({
-      config_file = ".arduinoNvim_config.lua",
+      config_file = "/home/toraylife/Arduino/arduinoNvim_config.lua",
       board = "esp32:esp32:esp32c3",
       port = "/dev/ttyACM0",
       use_default_keymaps = false,
