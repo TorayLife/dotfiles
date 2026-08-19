@@ -83,9 +83,15 @@ output "DP-2" {
     position x=0 y=0
 }
 
+// output "HDMI-A-1" {
+//     mode "3480x2160@59.982"
+//     scale 2.25
+//     position x=2000 y=0
+// }
+
 output "HDMI-A-1" {
-    mode "3480x2160@59.982"
-    scale 2.25
+    mode "1920x1080@60.000"
+    scale 1.15
     position x=2000 y=0
 }
 
