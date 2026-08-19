@@ -528,7 +528,9 @@
             "multiplier": 2
         },
         "WebKeybinds": {
-            "enabled": true
+            "enabled": true,
+            "showNavigationButtons": true,
+            "overrideCommonKeybinds": true
         },
         "WebScreenShareFixes": {
             "enabled": true
@@ -551,7 +553,8 @@
         },
         "Settings": {
             "enabled": true,
-            "settingsLocation": "aboveNitro"
+            "settingsLocation": "aboveNitro",
+            "includeVencordInfoWhenCopying": true
         },
         "DisableDeepLinks": {
             "enabled": true
@@ -570,6 +573,21 @@
         },
         "MusicRichPresence": {
             "enabled": false
+        },
+        "NoMiddleClickPaste": {
+            "enabled": false
+        },
+        "TenorGifSearch": {
+            "enabled": false
+        },
+        "ConcatenatedComponentExtractor": {
+            "enabled": true
+        },
+        "ContextMenuAPI": {
+            "enabled": true
+        },
+        "NoticesAPI": {
+            "enabled": true
         }
     },
     "uiElements": {
@@ -586,7 +604,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1784607176885
+        "settingsSyncVersion": 1787069551467
     },
     "windowsMaterial": "none"
 }
