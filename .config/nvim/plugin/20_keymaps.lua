@@ -51,6 +51,7 @@ nmap('<ESC>', '<Cmd>nohlsearch<CR>', 'Clear search highlight' )
 -- This is used to provide 'mini.clue' with extra clues.
 -- Add an entry if you create a new group.
 Config.leader_group_clues = {
+  { mode = 'n', keys = '<Leader>a', desc = '+Arduino' },
   { mode = 'n', keys = '<Leader>b', desc = '+Buffer' },
   { mode = 'n', keys = '<Leader>e', desc = '+Explore/Edit' },
   { mode = 'n', keys = '<Leader>f', desc = '+Find' },
@@ -253,3 +254,9 @@ nmap_leader('dn', '<Cmd>DapStepOver<CR>', 'Step over')
 nmap_leader('dc', '<Cmd>DapContinue<CR>', 'Continue')
 nmap_leader('db', '<Cmd>DapToggleBreakpoint<CR>', 'Toggle breakpoint')
 nmap_leader('dt', '<Cmd>lua require("dapui").toggle()<CR>', 'Toggle dapui windows')
+
+nmap_leader('ac', '<Cmd>InoCheck<CR>', 'Compile and verify')
+nmap_leader('au', '<Cmd>InoUpload<CR>', 'Upload sketch to board')
+nmap_leader('am', '<Cmd>InoMonitor<CR>', 'Open serial monitor')
+nmap_leader('as', '<Cmd>InoStatus<CR>', 'Display board, port, and FQBN status')
+nmap_leader('ag', '<Cmd>InoGUI<CR>', 'Open GUI for setting board and port')

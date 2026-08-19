@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "Arduino-Nvim": {
+      "rev": "c9983b5ead3b2ce574d9bcb9708febad0f8ddbd7",
+      "src": "https://github.com/yuukiflow/Arduino-Nvim"
+    },
     "conform.nvim": {
       "rev": "c2526f1cde528a66e086ab1668e996d162c75f4f",
       "src": "https://github.com/stevearc/conform.nvim"

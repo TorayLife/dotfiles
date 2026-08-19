@@ -187,7 +187,7 @@ now(function()
   -- add({ 'https://github.com/nvim-java/nvim-java' })
   -- require('java').setup()
   add({ 'https://github.com/mfussenegger/nvim-jdtls' })
-
+  
   add({ 'https://github.com/mason-org/mason.nvim' })
   require("mason").setup()
   add({ 'https://github.com/mason-org/mason-lspconfig.nvim' })
@@ -198,6 +198,16 @@ now(function()
   require('trouble').setup()
   add({ 'https://github.com/AlexandrosAlexiou/kotlin.nvim' })
   require('kotlin').setup()
+
+  -- Arduino
+  add({ 'https://github.com/yuukiflow/Arduino-Nvim'})
+  require('Arduino-Nvim').setup({
+      config_file = ".arduinoNvim_config.lua",
+      board = "esp32:esp32:esp32c3",
+      port = "/dev/ttyACM0",
+      use_default_keymaps = false,
+      picker_backend = "nvim"
+  })
   -- Use `:h vim.lsp.enable()` to automatically enable language server based on
   -- the rules provided by 'nvim-lspconfig'.
   -- Use `:h vim.lsp.config()` or 'after/lsp/' directory to configure servers.
@@ -211,8 +221,18 @@ now(function()
     'gopls',
     'jdtls',
     -- 'kotlin-language-server',
-    'kotlin_lsp'
+    'kotlin_lsp',
+    'arduino_language_server'
     -- For example, if `lua-language-server` is installed, use `'lua_ls'` entry
+  })
+  vim.lsp.config("arduino_language_server", {
+      cmd = {
+        "arduino-language-server",
+        "-clangd", "clangd",                                      -- Path to clangd binary
+        "-cli", "arduino-cli",                                    -- Path to arduino-cli binary
+        "-cli-config", vim.fn.expand("~/.arduino15/arduino-cli.yaml"), -- Path to config yaml
+        "-fqbn", "esp32:esp32:esp32c3"                                -- The exact board profile
+      }
   })
 end)
 
