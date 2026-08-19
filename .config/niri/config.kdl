@@ -696,6 +696,3 @@ binds {
     // Alt+M { spawn-sh "wl-kbptr -o modes=floating,click -o mode_floating.source=detect"; }
     Alt+M { spawn-sh "wl-kbptr -o modes=tile,bisect,click"; }
 }
-
-include "./noctalia.kdl"
-
