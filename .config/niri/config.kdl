@@ -396,6 +396,14 @@ window-rule {
   }
 }
 
+window-rule {
+  match app-id="kitty-btop"
+  open-floating true
+  open-focused true
+  default-column-width { proportion 0.75; }
+  default-window-height { proportion 0.75; }
+}
+
 blur {
     passes 3 
     offset 1
@@ -425,6 +433,8 @@ binds {
     Alt+Space hotkey-overlay-title="Run a noctalia launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+T repeat=false { spawn "kitty"; }
+
+    Ctrl+Shift+Escape { spawn "kitty" "--app-id" "kitty-btop" "-e" "btop"; }
 
     Mod+W repeat=false { spawn "rofi-rbw"; }
 
